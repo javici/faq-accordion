@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/just-html-and-css-_pl_JKdB6u](https://www.frontendmentor.io/solutions/just-html-and-css-_pl_JKdB6u)
-- Live Site URL: [https://faq-accordion-8gvpru6cy-javicis-projects.vercel.app/](https://faq-accordion-8gvpru6cy-javicis-projects.vercel.app/)
+- Live Site URL: [https://faq-accordion-eta-ten.vercel.app/](https://faq-accordion-eta-ten.vercel.app/)
 
 ### Built with
 
