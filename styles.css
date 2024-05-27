@@ -1,0 +1,128 @@
+:root {
+   --white: hsl(0, 0%, 100%);
+   --dark-purple: hsl(292, 42%, 14%);
+   --grayish-purple: hsl(292, 16%, 49%);
+   --purple: hsl(294, 87%, 45%);
+   --light-pink: hsl(275, 100%, 97%);
+}
+
+* {
+   box-sizing: border-box;
+   position: relative;
+   min-width: 0;
+}
+
+body {
+   min-height: 100dvh
+}
+
+h1, h2, h3, h4 {
+text-wrap: balance;
+}
+
+p {
+   text-wrap: pretty;
+   font-size: 16px;
+}
+
+
+@font-face {
+   font-family: 'WorkSans';
+   src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+   font-weight: 600;
+   font-style: normal;
+}
+
+body {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   background-color: #242424;
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   font-family: WorkSans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   font-synthesis: none;
+   font-weight: 400;
+   text-rendering: optimizeLegibility;
+   margin: 0;
+   background-image: url('/assets/images/background-pattern-desktop.svg');
+   background-position: top;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: var(--light-pink);
+}
+
+
+.app {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 200px;
+   padding: 0 20px;
+
+   .faq-card {
+      background-color: var(--white);
+      min-height: 200px;
+      width: 600px;
+      padding: 24px;
+      border-radius: 12px;
+
+      .card-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            height: 65px;
+            margin-bottom: 34px;
+
+         img {
+            height: 2em;
+         }
+
+         h1 {
+            color: var(--dark-purple);
+            font-size: 3em;
+            font-weight: 800;
+         }
+      }
+
+      main {
+ /*         details summary::-webkit-details-marker,
+         details summary::marker {
+         content: "";
+         } */
+         details > summary:after {
+            content: url('/assets/images/icon-plus.svg');
+         }
+         details[open] > summary:after {
+            content: url('/assets/images/icon-minus.svg');
+         }
+
+         details:not(:last-child) {
+            border-bottom: 1px solid var(--light-pink);
+         }
+
+         details:hover {
+            color: var(--purple)
+         }
+
+
+         details {
+         color: var(--dark-purple);
+            
+        
+
+         summary {
+            font-size: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+         }
+
+         p {
+            color: var(--grayish-purple)
+         }
+
+      }
+      }
+   }
+}
